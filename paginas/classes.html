@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça as classes disponíveis no Abyss RPG.">
+  <title>Classes | Abyss RPG</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap-nav">
+      <button class="nav-button" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">...</button>
+      <nav aria-label="Navegação principal">
+        <ul id="menu" class="nav__menu">
+          <li><a class="nav__link" href="../index.html">Início</a></li>
+          <li><a class="nav__link" href="historia.html">História</a></li>
+          <li><a class="nav__link" href="personagens.html">Personagens</a></li>
+          <li><a class="nav__link" href="classes.html">Classes</a></li>
+          <li><a class="nav__link" href="mundo.html">Mundo</a></li>
+          <li><a class="nav__link" href="sistema.html">Sistema</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-abyss">Abyss RPG</span>
+        <h1>CLASSES</h1>
+        <p class="hero-description">Cada sobrevivente possui uma maneira diferente de enfrentar aquilo que existe nas profundezas.</p>
+      </div>
+    </section>
+
+    <div class="wrap-sobre">
+      <section class="sobre-abyss-rpg">
+        <h2>As classes</h2>
+        <p>
+          No Abismo, ninguém escolhe uma classe: é a primeira runa que o escolhe.
+          A <strong>runa de origem</strong> define a classe e os bônus de atributos (aplicados uma única vez).
+          Runas de outros tipos, obtidas depois, concedem apenas um poder passivo e não mudam a classe.
+          Toda classe tem um <strong>poder</strong>, um <strong>custo</strong> e uma <strong>fraqueza</strong>.
+        </p>
+      </section>
+
+      <section class="classes" aria-label="Fichas de classes">
+
+        <article class="classe" id="investigador-sombrio">
+          <header class="classe__topo">
+            <h3 class="classe__nome">Investigador Sombrio</h3>
+            <span class="classe__tag">Investigação · Armas de fogo · Sanidade frágil</span>
+          </header>
+          <p class="classe__resumo">
+            Quem investiga o Abismo precisa olhar para ele, e o Abismo olha de volta.
+            O Investigador troca a própria sanidade por respostas que ninguém mais consegue obter.
+          </p>
+          <dl class="classe__dados">
+            <div class="classe__item">
+              <dt>Papel no grupo</dt>
+              <dd>Informação e dano à distância. Descobre o que esperar antes do combate começar.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Atributos</dt>
+              <dd>+3 Inteligência, +2 Dedução, +1 Iniciativa, −2 Fortitude. Sanidade máxima −3.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Perícias</dt>
+              <dd>Vantagem em Investigação. Falhas extremas em testes de Dedução e Percepção contam como falhas comuns. Manuseio de armas de fogo.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Habilidades</dt>
+              <dd>
+                <strong>Investigação Sombria</strong> (4 de sanidade, 1 vez por cena): revela uma pista crucial. A cada uso extra na mesma sessão, o custo sobe em 1.<br>
+                <strong>Mira Fria</strong> (passiva): +1 para acertar à distância contra alvos já investigados.
+              </dd>
+            </div>
+            <div class="classe__item">
+              <dt>Fraqueza</dt>
+              <dd>Pouca vida e péssimo no corpo a corpo. Com a sanidade baixa, a mente falha antes do corpo.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Equipamento inicial</dt>
+              <dd>Revólver de 8 balas, munição reserva e um bloco de notas.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Como obter</dt>
+              <dd>Ter uma das 4 runas ocultas como runa de origem.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="classe" id="abyss-walker">
+          <header class="classe__topo">
+            <h3 class="classe__nome">Abyss Walker</h3>
+            <span class="classe__tag">Combate físico · Runas abissais</span>
+          </header>
+          <p class="classe__resumo">
+            Caminha onde os outros fogem. Seu corpo foi moldado pelo Abismo para resistir a ele.
+          </p>
+          <dl class="classe__dados">
+            <div class="classe__item">
+              <dt>Papel no grupo</dt>
+              <dd>Linha de frente. Segura os andarilhos abissais para que o resto do grupo trabalhe.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Atributos</dt>
+              <dd>+3 Fortitude, +2 Constituição, −1 Dedução, −1 Iniciativa.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Runas</dt>
+              <dd>As 4 runas abissais. Cada uma concede um poder diferente. Começa com a runa de origem.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Habilidades</dt>
+              <dd>
+                <strong>Movimentação Abissal</strong> (2 de sanidade): esquiva avançada.<br>
+                <strong>Poder da Runa</strong> (1 vez por cena): efeito da runa de origem.
+              </dd>
+            </div>
+            <div class="classe__item">
+              <dt>Fraqueza</dt>
+              <dd>Sem alcance e vulnerável a efeitos mentais. Quanto mais usa as runas, mais o Abismo o reconhece como um dos seus.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Equipamento inicial</dt>
+              <dd>Lâmina Abissal: feita de um material que não é metal, afiada como navalha e impossível de quebrar. Não pode ser trocada nem emprestada.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Como obter</dt>
+              <dd>Ter uma das 4 runas abissais como runa de origem.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="classe" id="desafiador-umbral">
+          <header class="classe__topo">
+            <h3 class="classe__nome">Desafiador Umbral</h3>
+            <span class="classe__tag">Magia · Suporte · Baixa defesa</span>
+          </header>
+          <p class="classe__resumo">
+            Desafia a escuridão tomando emprestado o poder dela. Frágil de corpo, mas decide o rumo de qualquer batalha.
+          </p>
+          <dl class="classe__dados">
+            <div class="classe__item">
+              <dt>Papel no grupo</dt>
+              <dd>Suporte principal e dano em explosão. Fortalece os aliados e abre brechas nos inimigos.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Atributos</dt>
+              <dd>+3 Inteligência, +2 Sabedoria, +3 Sanidade, −2 Constituição, −2 Fortitude.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Magias</dt>
+              <dd>4 magias rúnicas (das runas mágicas) e 10 magias elementais, aprendidas por meio de documentos encontrados no Abismo.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Habilidades de suporte</dt>
+              <dd>
+                <strong>Encantamento</strong> (1 de sanidade, ocupa a ação do turno): buff que dura 3 turnos. Apenas 1 ativo por vez.<br>
+                <strong>Passo Umbral</strong>: locomoção e redução de dano, com usos limitados por cena.
+              </dd>
+            </div>
+            <div class="classe__item">
+              <dt>Fraqueza</dt>
+              <dd>Pouca vida, pouca estamina e defesa baixa. Se for alcançado no corpo a corpo, perde a concentração.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Como obter</dt>
+              <dd>Ter uma das 4 runas mágicas como runa de origem.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="classe classe--rara" id="perseguidor-da-luz">
+          <header class="classe__topo">
+            <h3 class="classe__nome">Perseguidor da Luz</h3>
+            <span class="classe__tag">Runas · Magia · Bênçãos · Classe rara</span>
+          </header>
+          <p class="classe__resumo">
+            Abençoado por Lumian, carrega uma runa solar. Versátil como nenhum outro, mas não é o melhor em nada, e sua luz tem um preço.
+          </p>
+          <dl class="classe__dados">
+            <div class="classe__item">
+              <dt>Papel no grupo</dt>
+              <dd>Guerreiro versátil. Cobre a falta de qualquer outra classe, sem superá-las no que fazem de melhor.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Atributos</dt>
+              <dd>+2 Fortitude, +1 Constituição, +1 Dedução, +3 Sanidade, +6 de vida.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Runas e magias</dt>
+              <dd>Um poder em nível reduzido de cada tipo de runa que possui, além das magias derivadas das runas solares.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Bênçãos</dt>
+              <dd><strong>Véu da Luz</strong> (1 vez por cena): presença 0 por 2 turnos. Termina ao atacar.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Dívida com Lumian</dt>
+              <dd>Uma vez por arco, o Mestre pode cobrar um favor de Lumian. Recusar enfraquece a bênção até que seja cumprido.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Requisitos</dt>
+              <dd>Ter 1 runa de cada tipo (abissal, mágica e oculta) e ter contato com Lumian pelo menos 2 vezes.</dd>
+            </div>
+            <div class="classe__item">
+              <dt>Como obter</dt>
+              <dd>Cumprir os requisitos e passar pelo rito de Lumian, que concede a primeira runa solar.</dd>
+            </div>
+          </dl>
+        </article>
+
+      </section>
+
+      <section class="sobre-abyss-rpg">
+        <p>Estas classes representam apenas uma parte das possibilidades existentes no sistema.</p>
+      </section>
+    </div>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

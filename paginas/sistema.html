@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o sistema do Abyss RPG: atributos, perícias, testes, Sanidade e mais.">
+  <title>Sistema | Abyss RPG</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="top">
+    <div class="wrap-nav">
+
+      <button class="nav-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu"
+              aria-label="Abrir menu">
+        ...
+      </button>
+
+      <nav aria-label="Navegação principal">
+        <ul id="menu" class="nav__menu">
+          <li><a class="nav__link" href="../index.html">Início</a></li>
+          <li><a class="nav__link" href="historia.html">História</a></li>
+          <li><a class="nav__link" href="personagens.html">Personagens</a></li>
+          <li><a class="nav__link" href="classes.html">Classes</a></li>
+          <li><a class="nav__link" href="mundo.html">Mundo</a></li>
+          <li><a class="nav__link" href="sistema.html">Sistema</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-abyss">Abyss RPG</span>
+        <h1>SISTEMA</h1>
+
+        <p class="hero-description">
+          Conhecimento, escolhas e sobrevivência. Cada decisão possui
+          consequências.
+        </p>
+      </div>
+    </section>
+
+    <div class="wrap-sobre">
+
+      <section class="sobre-abyss-rpg sistema-secao">
+
+        <h2>O sistema</h2>
+
+        <p>
+          O sistema do Abyss RPG foi desenvolvido para priorizar
+          investigação, exploração e sobrevivência.
+        </p>
+
+        <p>
+          Mais do que simplesmente determinar quem é mais forte,
+          as regras procuram representar as consequências das escolhas
+          realizadas pelos jogadores.
+        </p>
+
+        <nav aria-label="Índice do sistema">
+          <ul class="sistema-indice">
+            <li><a href="#atributos">Atributos</a></li>
+            <li><a href="#pericias">Perícias</a></li>
+            <li><a href="#testes">Testes</a></li>
+            <li><a href="#vantagem">Vantagem</a></li>
+            <li><a href="#ferimentos">Ferimentos</a></li>
+            <li><a href="#defesas">Defesas</a></li>
+            <li><a href="#sanidade">Sanidade</a></li>
+            <li><a href="#investigacao">Investigação</a></li>
+            <li><a href="#sobrevivencia">Sobrevivência</a></li>
+            <li><a href="#escolhas">Escolhas</a></li>
+          </ul>
+        </nav>
+
+        <!-- ATRIBUTOS -->
+        <h2 id="atributos">Atributos</h2>
+
+        <p>
+          Cada personagem possui seis atributos, normalmente entre 1 e 10.
+          O atributo é a capacidade natural do personagem e fornece o
+          modificador principal dos seus testes.
+        </p>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th>Atributo</th><th>Representa</th><th>Exemplos</th></tr></thead>
+            <tbody>
+              <tr><td>Força</td><td>Potência física</td><td>erguer, empurrar, golpear, quebrar</td></tr>
+              <tr><td>Agilidade</td><td>Velocidade e coordenação</td><td>esquivar, correr, mirar, agir rapidamente</td></tr>
+              <tr><td>Vigor</td><td>Resistência física</td><td>suportar ferimentos, fadiga, fome</td></tr>
+              <tr><td>Intelecto</td><td>Conhecimento e raciocínio</td><td>compreender, pesquisar, analisar</td></tr>
+              <tr><td>Percepção</td><td>Atenção aos sentidos</td><td>notar detalhes, ouvir, encontrar pistas</td></tr>
+              <tr><td>Vontade</td><td>Controle mental</td><td>resistir ao medo, manter concentração, suportar o Abismo</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="exemplo">
+          Um personagem com Percepção 7 recebe +7 em testes baseados em Percepção.
+        </p>
+
+        <!-- PERÍCIAS -->
+        <h2 id="pericias">Perícias</h2>
+
+        <p>
+          Se o atributo é a capacidade natural, a perícia é o treinamento.
+          Cada perícia possui graduação de 0 a 5.
+        </p>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th class="num">Grau</th><th>Treinamento</th></tr></thead>
+            <tbody>
+              <tr><td class="num">0</td><td>Sem treinamento</td></tr>
+              <tr><td class="num">1</td><td>Familiarizado</td></tr>
+              <tr><td class="num">2</td><td>Competente</td></tr>
+              <tr><td class="num">3</td><td>Especialista</td></tr>
+              <tr><td class="num">4</td><td>Mestre</td></tr>
+              <tr><td class="num">5</td><td>Excepcional</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>As 12 perícias</h3>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th>Perícia</th><th>Atributo mais comum</th></tr></thead>
+            <tbody>
+              <tr><td>Atletismo</td><td>Força</td></tr>
+              <tr><td>Acrobacia</td><td>Agilidade</td></tr>
+              <tr><td>Furtividade</td><td>Agilidade</td></tr>
+              <tr><td>Armas de Fogo</td><td>Agilidade</td></tr>
+              <tr><td>Sobrevivência</td><td>Vigor</td></tr>
+              <tr><td>Medicina</td><td>Intelecto</td></tr>
+              <tr><td>Investigação</td><td>Intelecto</td></tr>
+              <tr><td>Dedução</td><td>Intelecto</td></tr>
+              <tr><td>Ocultismo</td><td>Intelecto</td></tr>
+              <tr><td>Percepção</td><td>Percepção</td></tr>
+              <tr><td>Vontade</td><td>Vontade</td></tr>
+              <tr><td>Influência</td><td>Vontade</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          A perícia nem sempre usa o mesmo atributo. Uma situação
+          particularmente física pode usar Sobrevivência com Vigor; observar
+          uma cena pode usar Investigação com Percepção.
+        </p>
+
+        <!-- TESTES -->
+        <h2 id="testes">Testes</h2>
+
+        <div class="regra">
+          <strong>Regra básica</strong>
+          Role 1d20 + Atributo + Perícia e compare o resultado com a dificuldade.
+          Se igualar ou superar, o teste é um sucesso.
+        </div>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th class="num">Dificuldade</th><th>Nome</th><th>Situação</th></tr></thead>
+            <tbody>
+              <tr><td class="num">8</td><td>Muito fácil</td><td>tarefa simples</td></tr>
+              <tr><td class="num">12</td><td>Fácil</td><td>exige alguma competência</td></tr>
+              <tr><td class="num">16</td><td>Moderada</td><td>desafio normal</td></tr>
+              <tr><td class="num">20</td><td>Difícil</td><td>exige treinamento</td></tr>
+              <tr><td class="num">24</td><td>Muito difícil</td><td>especialista recomendado</td></tr>
+              <tr><td class="num">28</td><td>Extrema</td><td>excepcionalmente difícil</td></tr>
+              <tr><td class="num">32</td><td>Abissal</td><td>quase impossível</td></tr>
+              <tr><td class="num">36+</td><td>Sobrenatural</td><td>não deveria ser resolvido por meios normais</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="exemplo">
+          Um personagem com Intelecto 6 e Investigação 3 examina uma porta de
+          dificuldade 20. Ele rola 1d20 + 9 e precisa tirar 11 ou mais no dado.
+        </p>
+
+        <h3>Chance de sucesso</h3>
+
+        <p>
+          A tabela mostra a chance de sucesso conforme o modificador total
+          (Atributo + Perícia).
+        </p>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Dificuldade</th>
+                <th class="num">+0</th><th class="num">+3</th><th class="num">+6</th>
+                <th class="num">+9</th><th class="num">+12</th><th class="num">+15</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">8</td><td class="num">65%</td><td class="num">80%</td><td class="num">95%</td><td class="num">100%</td><td class="num">100%</td><td class="num">100%</td></tr>
+              <tr><td class="num">12</td><td class="num">45%</td><td class="num">60%</td><td class="num">75%</td><td class="num">90%</td><td class="num">100%</td><td class="num">100%</td></tr>
+              <tr><td class="num">16</td><td class="num">25%</td><td class="num">40%</td><td class="num">55%</td><td class="num">70%</td><td class="num">85%</td><td class="num">100%</td></tr>
+              <tr><td class="num">20</td><td class="num">5%</td><td class="num">20%</td><td class="num">35%</td><td class="num">50%</td><td class="num">65%</td><td class="num">80%</td></tr>
+              <tr><td class="num">24</td><td class="num">0%</td><td class="num">0%</td><td class="num">15%</td><td class="num">30%</td><td class="num">45%</td><td class="num">60%</td></tr>
+              <tr><td class="num">28</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">10%</td><td class="num">25%</td><td class="num">40%</td></tr>
+              <tr><td class="num">32</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">5%</td><td class="num">20%</td></tr>
+              <tr><td class="num">36</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td><td class="num">0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          O conhecimento aumenta suas chances de sobreviver, mas nunca
+          transforma o desconhecido em algo completamente seguro. Mesmo um
+          especialista com +12 tem apenas 65% de chance contra dificuldade 20.
+        </p>
+
+        <h3>Testes opostos</h3>
+
+        <p>
+          Quando duas criaturas disputam diretamente uma capacidade, ambas
+          rolam o mesmo tipo de teste e o maior resultado vence. São usados
+          principalmente em perseguições, furtividade contra percepção e
+          disputas físicas.
+        </p>
+
+        <h3>Resultados críticos</h3>
+
+        <div class="regra">
+          <strong>20 natural: sucesso excepcional</strong>
+          Além de conseguir a ação, o personagem obtém uma vantagem adicional
+          apropriada à situação. Ao arrombar uma porta, por exemplo, ele
+          também consegue fazê-lo sem produzir o ruído normal.
+        </div>
+
+        <div class="regra">
+          <strong>1 natural: complicação</strong>
+          A ação falha ou produz uma consequência, mas não significa
+          automaticamente um desastre. Ao tentar abrir uma porta em silêncio,
+          ela continua fechada e o ruído aumenta o perigo.
+        </div>
+
+        <!-- VANTAGEM -->
+        <h2 id="vantagem">Vantagem, desvantagem e modificadores</h2>
+
+        <div class="regra">
+          <strong>Vantagem</strong>
+          Role 2d20 e fique com o maior resultado.
+        </div>
+
+        <div class="regra">
+          <strong>Desvantagem</strong>
+          Role 2d20 e fique com o menor resultado.
+        </div>
+
+        <p>
+          Duas vantagens continuam sendo apenas uma vantagem. O mestre também
+          pode aplicar pequenos modificadores numéricos, quando a situação
+          muda pouco a dificuldade:
+        </p>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th>Situação</th><th class="num">Modificador</th></tr></thead>
+            <tbody>
+              <tr><td>Condição favorável</td><td class="num">+2</td></tr>
+              <tr><td>Condição muito favorável</td><td class="num">+4</td></tr>
+              <tr><td>Condição desfavorável</td><td class="num">−2</td></tr>
+              <tr><td>Condição extremamente desfavorável</td><td class="num">−4</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- FERIMENTOS -->
+        <h2 id="ferimentos">Pontos de Vida e ferimentos</h2>
+
+        <div class="regra">
+          <strong>PV máximo = 10 + (Vigor × 3)</strong>
+          Um personagem com Vigor 6 possui 10 + 18 = 28 PV.
+        </div>
+
+        <div class="tabela-wrap">
+          <table>
+            <thead>
+              <tr><th>Vigor</th><th class="num">1</th><th class="num">2</th><th class="num">3</th><th class="num">4</th><th class="num">5</th><th class="num">6</th><th class="num">7</th><th class="num">8</th><th class="num">9</th><th class="num">10</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>PV</td><td class="num">13</td><td class="num">16</td><td class="num">19</td><td class="num">22</td><td class="num">25</td><td class="num">28</td><td class="num">31</td><td class="num">34</td><td class="num">37</td><td class="num">40</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Incapacitado</h3>
+
+        <p>
+          Ao chegar a 0 PV, o personagem fica Incapacitado. Ele não morre
+          automaticamente. Enquanto estiver incapacitado:
+        </p>
+
+        <ul>
+          <li>não pode realizar ações normais;</li>
+          <li>precisa de ajuda para se recuperar;</li>
+          <li>continua sujeito aos perigos da cena;</li>
+          <li>efeitos específicos podem determinar sua morte.</li>
+        </ul>
+
+        <div class="regra">
+          <strong>Marcas de Ferimento Grave</strong>
+          Sofrer dano enquanto está incapacitado dá ao personagem 1 Marca de
+          Ferimento Grave. Com 3 marcas, ele morre.
+        </div>
+
+        <p>
+          Cair a 0 PV é uma crise, não necessariamente o fim: sempre existe
+          espaço para um resgate.
+        </p>
+
+        <!-- DEFESAS -->
+        <h2 id="defesas">Defesas</h2>
+
+        <div class="regra">
+          <strong>Defesa Física = 10 + Agilidade</strong>
+          A dificuldade de atingir fisicamente o personagem. Com Agilidade 7,
+          um inimigo precisa alcançar 17 para acertá-lo.
+        </div>
+
+        <div class="regra">
+          <strong>Defesa Sobrenatural = 10 + Vontade</strong>
+          A resistência contra fenômenos sobrenaturais, efeitos mentais e
+          poderes do Abismo. Com Vontade 6, o valor é 16.
+        </div>
+
+        <p class="em-breve">
+          Armaduras e outros efeitos defensivos serão definidos junto com as
+          regras de combate.
+        </p>
+
+        <!-- SANIDADE -->
+        <h2 id="sanidade">Sanidade</h2>
+
+        <p>
+          O Abismo não afeta apenas o corpo. A exposição ao desconhecido pode
+          alterar a percepção dos personagens e tornar cada descoberta mais
+          perigosa. A Sanidade é a capacidade atual do personagem de continuar
+          funcionando diante do horror e também a energia que alimenta suas
+          habilidades.
+        </p>
+
+        <div class="regra">
+          <strong>Sanidade máxima = 10 + Vontade</strong>
+          Com Vontade 6, o personagem possui 16 de Sanidade. A classe pode
+          modificar esse valor. Todo personagem começa a sessão com a
+          Sanidade atual igual à máxima.
+        </div>
+
+        <h3>Gastar Sanidade</h3>
+
+        <p>
+          Algumas habilidades exigem que o personagem gaste Sanidade. Uma
+          habilidade de custo 3 leva um personagem de 14 para 11 de Sanidade.
+          A escolha é sempre a mesma: gastar a mente agora para sobreviver ou
+          guardá-la para quando descobrir o que realmente está aqui.
+        </p>
+
+        <h3>Recuperar Sanidade</h3>
+
+        <p>
+          A Sanidade não é recuperada automaticamente após cada cena. Ela pode
+          voltar por descanso seguro, determinadas situações narrativas e
+          recursos específicos. Nenhum método comum recupera Sanidade acima do
+          valor máximo.
+        </p>
+
+        <h3>Colapso</h3>
+
+        <div class="regra">
+          <strong>Ao chegar a 0 de Sanidade</strong>
+          O personagem sofre um Colapso e não pode gastar Sanidade até
+          recuperar pelo menos 1 ponto.
+        </div>
+
+        <p>O mestre escolhe uma consequência coerente com a cena, como:</p>
+
+        <ul>
+          <li>perda temporária de concentração;</li>
+          <li>incapacidade de usar determinada habilidade;</li>
+          <li>comportamento de pânico;</li>
+          <li>interpretação equivocada de uma percepção.</li>
+        </ul>
+
+        <p>
+          Sanidade e Corrupção não são a mesma coisa. A Sanidade é um recurso
+          de curto prazo; a Corrupção é a consequência permanente de usar as
+          runas.
+        </p>
+
+        <!-- INVESTIGAÇÃO -->
+        <h2 id="investigacao">Investigação</h2>
+
+        <p>
+          Informações possuem valor. Uma pista aparentemente pequena pode
+          revelar uma verdade escondida ou mudar completamente a compreensão
+          de uma situação.
+        </p>
+
+        <p class="em-breve">
+          Regras de pistas, documentos e sussurros em breve.
+        </p>
+
+        <!-- SOBREVIVÊNCIA -->
+        <h2 id="sobrevivencia">Sobrevivência</h2>
+
+        <p>
+          Recursos são limitados e os perigos estão constantemente presentes.
+          Os jogadores precisarão decidir quando lutar, quando fugir e
+          quando simplesmente continuar observando.
+        </p>
+
+        <p class="em-breve">
+          Regras de combate, armas e recursos em breve.
+        </p>
+
+        <!-- ESCOLHAS -->
+        <h2 id="escolhas">Escolhas</h2>
+
+        <p>
+          No Abismo, nem sempre existe uma escolha correta.
+          Algumas decisões podem salvar um personagem enquanto colocam
+          todo o grupo em perigo.
+        </p>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
